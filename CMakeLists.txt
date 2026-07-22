@@ -5,4 +5,5 @@ set(CMAKE_CXX_STANDARD 17)
 
 add_executable(quantProbe main.cpp
         src/main.cpp
-        src/loader.cpp)
+        src/loader.cpp
+        include/loader.hpp)
