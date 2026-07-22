@@ -93,7 +93,7 @@ def main():
                     else torch.zeros(conv.out_channels)
             name = f"conv{conv_count}"
             wshape, _ = dump_tensor(
-                w_folded, os.path.json(WEIGHTS_DIR, f"{conv_count:03d}_{name}_w.bin"))
+                w_folded, os.path.join(WEIGHTS_DIR, f"{conv_count:03d}_{name}_w.bin"))
             bshape, _ = dump_tensor(
                 b_folded, os.path.join(WEIGHTS_DIR, f"{conv_count:03d}_{name}_b.bin"))
             stride = list(conv.stride)
