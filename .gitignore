@@ -1,0 +1,20 @@
+# Python
+venv/
+__pycache__/
+*.pyc
+
+# Exported model artifacts — regenerate with scripts/export_weights.py
+models/weights/
+models/manifest.json
+data/*.bin
+data/ref_meta.json
+
+# C++ build output
+build/
+cmake-build-*/
+
+# IDE
+.idea/
+
+# OS
+.DS_Store
